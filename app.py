@@ -150,7 +150,7 @@ class CardioPredictSVM:
 
 @st.cache_resource
 def load_trained_model():
-    df = pd.read_csv("cair_cvd_2025.csv")
+    df = pd.read_csv("CVD_Dataset.csv")
     threshold = df["CVD Risk Score"].quantile(0.75)
     df["cvd_high_risk"] = (df["CVD Risk Score"] >= threshold).astype(int)
 
@@ -657,3 +657,4 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
+
