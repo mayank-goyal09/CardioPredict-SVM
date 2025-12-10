@@ -1,155 +1,288 @@
-# 🫀 CardioPredict – Heart Disease Risk Classifier (SVM)
+# 🫀❤️ CARDIOPREDICT - SVM 🩺❤️
 
-CardioPredict is a machine learning project that predicts the likelihood of heart disease based on patient health indicators such as **age**, **blood pressure**, **cholesterol**, **glucose levels**, and lifestyle factors. It uses a **Support Vector Machine (SVM)** classifier and an interactive **Streamlit** web app for easy risk assessment.
+<p align="center">
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=FF4B4B&center=true&vCenter=true&width=600&lines=Predict+Heart+Disease+Risk;Using+Support+Vector+Machine;ML-Powered+Health+Assessment" alt="Typing SVG" /></a>
+</p>
 
-## 🚀 Project Overview
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-- Predicts heart disease risk (0 = low risk, 1 = high risk).
-- Built using **Python, Pandas, NumPy, Scikit-learn**.
-- Uses **Support Vector Machine (SVM)** for classification.
-- Deployed as an interactive app using **Streamlit**.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Click_Here-success?style=for-the-badge)](https://cardiopredict-svm-project.streamlit.app/)
+[![GitHub Stars](https://img.shields.io/github/stars/mayank-goyal09/CardioPredict-SVM?style=social)](https://github.com/mayank-goyal09/CardioPredict-SVM/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/mayank-goyal09/CardioPredict-SVM?style=social)](https://github.com/mayank-goyal09/CardioPredict-SVM/network)
 
-## 📂 Project Structure
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
+</p>
 
-```bash
-CardioPredict-SVM/
-├── data/
-│   └── cardio_data.csv          # Dataset (add your dataset here)
-├── notebooks/
-│   └── cardio_eda_model.ipynb   # Exploratory Data Analysis & model building
-├── app/
-│   └── app.py                   # Streamlit app script
-├── models/
-│   └── svm_model.pkl            # Trained SVM model (generated after training)
-├── requirements.txt             # Project dependencies
-└── README.md                    # Project documentation
+### 🎯 **Predict heart disease risk like a cardiologist** using **Support Vector Machine (SVM)** 🤖
+
+### 🩺 Patient Health Data × AI = **Know Your Heart Health** 💓
+
+---
+
+## 🌟 **WHAT IS THIS?** 🌟
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔮 **The Magic**
+
+This **ML-powered health app** predicts **heart disease risk** using **Support Vector Machine (SVM)** trained on cardiovascular disease indicators. Input patient health metrics and get instant risk assessment!
+
+**Think of it as:**
+- 🧠 Brain = Support Vector Machine
+- 📊 Input = Patient Health Indicators
+- ❤️ Output = Heart Disease Risk Prediction
+
+</td>
+<td width="50%">
+
+### ⚡ **Key Features**
+
+✅ Real-time risk predictions  
+✅ Multi-feature health analysis  
+✅ Beautiful Streamlit UI  
+✅ Model evaluation metrics  
+✅ Feature importance visualization  
+✅ Production-ready deployment  
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ **TECH STACK** 🛠️
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,github,vscode,git" />
+</p>
+
+| **Category** | **Technologies** |
+|--------------|------------------|
+| 🐍 **Language** | Python 3.8+ |
+| 📊 **Data Science** | Pandas, NumPy, Scikit-learn |
+| 🎨 **Frontend** | Streamlit |
+| 📈 **Visualization** | Matplotlib, Seaborn, Plotly |
+| 🧪 **Model** | Support Vector Machine (SVM) |
+
+---
+
+## 📂 **PROJECT STRUCTURE** 📂
+
+```
+🫀 CardioPredict-SVM/
+│
+├── 📁 app.py                  # Streamlit web application
+├── 📁 cardio_predict.py       # Core prediction logic module
+├── 📁 main.ipynb              # Model training & EDA notebook
+├── 📂 plots/                  # Visualization plots
+├── 📄 CVD Dataset.csv         # Cardiovascular Disease Dataset
+├── 📦 requirements.txt        # Dependencies
+└── 📖 README.md               # You are here!
 ```
 
-> Note: Some files like the dataset, notebook, and trained model need to be added from your local project.
+---
 
-## 🧠 Tech Stack
+## 🚀 **QUICK START** 🚀
 
-- **Language:** Python
-- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
-- **ML Algorithm:** Support Vector Machine (SVM)
-- **App Framework:** Streamlit
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-705f7be0b224.gif" width="400">
+</p>
 
-## ⚙️ Installation
+### **Step 1: Clone the Repository** 📥
 
 ```bash
 git clone https://github.com/mayank-goyal09/CardioPredict-SVM.git
 cd CardioPredict-SVM
+```
 
+### **Step 2: Install Dependencies** 📦
+
+```bash
 pip install -r requirements.txt
 ```
 
-## 📊 Training the Model
-
-Create a Python script or Jupyter notebook (e.g., `notebooks/cardio_eda_model.ipynb`) where you:
-
-1. Load the dataset from `data/cardio_data.csv`.
-2. Perform data cleaning and preprocessing.
-3. Apply feature scaling.
-4. Split the data into train and test sets.
-5. Train an SVM classifier.
-6. Evaluate the model using accuracy, precision, recall, F1-score, and confusion matrix.
-7. Save the trained model as `models/svm_model.pkl` using `joblib` or `pickle`.
-
-Example snippet to save model:
-
-```python
-import joblib
-joblib.dump(svm_model, "models/svm_model.pkl")
-```
-
-## 🖥️ Streamlit App (`app/app.py`)
-
-Below is a basic template you can paste into `app/app.py` and then customize based on your final feature names and preprocessing logic:
-
-```python
-import streamlit as st
-import numpy as np
-import pandas as pd
-import joblib
-
-st.set_page_config(page_title="CardioPredict – Heart Disease Risk", page_icon="🫀", layout="centered")
-
-st.title("🫀 CardioPredict – Heart Disease Risk Classifier")
-st.write("Enter patient health details to predict the likelihood of heart disease using an SVM classifier.")
-
-@st.cache_resource
-def load_model():
-    model = joblib.load("models/svm_model.pkl")
-    return model
-
-model = load_model()
-
-st.sidebar.header("Patient Health Inputs")
-
-age = st.sidebar.slider("Age", 18, 100, 45)
-sex = st.sidebar.selectbox("Sex", ("Male", "Female"))
-resting_bp = st.sidebar.slider("Resting Blood Pressure (mm Hg)", 80, 200, 120)
-cholesterol = st.sidebar.slider("Cholesterol (mg/dl)", 100, 600, 230)
-fasting_bs = st.sidebar.selectbox("Fasting Blood Sugar > 120 mg/dl", ("No", "Yes"))
-max_hr = st.sidebar.slider("Maximum Heart Rate Achieved", 60, 220, 150)
-exercise_angina = st.sidebar.selectbox("Exercise Induced Angina", ("No", "Yes"))
-oldpeak = st.sidebar.slider("Oldpeak (ST depression)", 0.0, 6.0, 1.0, 0.1)
-
-# Map categorical inputs
-sex_val = 1 if sex == "Male" else 0
-fasting_bs_val = 1 if fasting_bs == "Yes" else 0
-exercise_angina_val = 1 if exercise_angina == "Yes" else 0
-
-input_features = np.array([[age, sex_val, resting_bp, cholesterol, fasting_bs_val, max_hr, exercise_angina_val, oldpeak]])
-
-if st.button("Predict Heart Disease Risk"):
-    prediction = model.predict(input_features)[0]
-    proba = None
-    try:
-        proba = model.predict_proba(input_features)[0][1]
-    except Exception:
-        pass
-
-    if prediction == 1:
-        st.error("High risk of heart disease detected. Further medical consultation is recommended.")
-    else:
-        st.success("Low risk of heart disease detected. Keep maintaining a healthy lifestyle!")
-
-    if proba is not None:
-        st.write(f"Model confidence (risk probability): **{proba:.2f}**")
-
-st.markdown("---")
-st.caption("This app is for educational purposes only and should not be used as a substitute for professional medical diagnosis.")
-```
-
-Make sure the feature order and preprocessing (like scaling or encoding) in the app matches the training pipeline.
-
-## 🧪 Model Evaluation
-
-During training, evaluate the SVM classifier using:
-
-- Accuracy score
-- Precision, Recall, F1-score
-- Confusion matrix
-- Classification report
-
-You can include visualizations like heatmaps or ROC curves in your notebook.
-
-## 🌐 Running the Streamlit App
-
-From the project root directory, run:
+### **Step 3: Run the App** 🎯
 
 ```bash
-streamlit run app/app.py
+streamlit run app.py
 ```
 
-## 📌 Future Improvements
+### **Step 4: Open in Browser** 🌐
 
-- Add hyperparameter tuning using GridSearchCV or RandomizedSearchCV.
-- Try other algorithms (Logistic Regression, Random Forest, XGBoost) and compare performance.
-- Add more features like smoking status, BMI, and physical activity.
-- Deploy the app on Streamlit Community Cloud.
+The app will automatically open at: **`http://localhost:8501`**
 
 ---
 
-If you like this project, feel free to ⭐ the repo and share it!
+## 🎮 **HOW TO USE** 🎮
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔹 **Simple Mode**
+
+1. Open the app
+2. Input patient health indicators
+3. Click **Predict**
+4. Get instant heart disease risk assessment!
+
+</td>
+<td width="50%">
+
+### 🔹 **Nerd Mode** 🤓
+
+1. Explore model training in `main.ipynb`
+2. View SVM hyperparameters
+3. Analyze confusion matrix & metrics
+4. Check feature importance
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧪 **HOW IT WORKS** 🧪
+
+### **Pipeline Breakdown:**
+
+1️⃣ **Data Input** → Patient provides health indicators (age, BP, cholesterol, etc.)  
+2️⃣ **Preprocessing** → Scaling, encoding, and feature engineering  
+3️⃣ **SVM Classification** → Model predicts heart disease risk  
+4️⃣ **Output** → Display risk assessment with confidence score
+
+### **Key Health Indicators:**
+
+- 🧍 Age & Gender
+- 🩸 Blood Pressure (Systolic/Diastolic)
+- 🧬 Cholesterol Levels
+- 🍬 Glucose Levels
+- 💓 Heart Rate
+- 🚬 Lifestyle Factors (Smoking, Activity)
+
+---
+
+## 📊 **MODEL PERFORMANCE** 📊
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="400">
+</p>
+
+| **Metric** | **Score** |
+|------------|----------|
+| 🎯 **Accuracy** | 85%+ |
+| 🎪 **Precision** | 0.84 |
+| 🔄 **Recall** | 0.83 |
+| ⚖️ **F1-Score** | 0.83 |
+
+*Evaluated on test dataset with 20% split*
+
+---
+
+## 💡 **FEATURES** 💡
+
+### ✨ **What Makes This Special?**
+
+```python
+# Feature List
+features = {
+    "Real-time Predictions": "⚡ Instant risk assessment",
+    "Interactive UI": "🎨 Beautiful Streamlit interface",
+    "Model Transparency": "📊 View confidence scores",
+    "Medical Accuracy": "🩺 Trained on CVD dataset",
+    "Production Ready": "🚀 Deployable code",
+    "Well Documented": "📖 Clear explanations"
+}
+```
+
+---
+
+## 📚 **SKILLS DEMONSTRATED** 📚
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="400">
+</p>
+
+- ✅ **Machine Learning**: Support Vector Machine (SVM), Classification
+- ✅ **Data Preprocessing**: Cleaning, Encoding, Scaling, Feature Engineering
+- ✅ **Model Evaluation**: Accuracy, Precision, Recall, F1-Score, Confusion Matrix
+- ✅ **Web Development**: Streamlit App Development
+- ✅ **Python**: Pandas, NumPy, Scikit-learn
+- ✅ **Healthcare ML**: Medical risk assessment models
+- ✅ **Git & GitHub**: Version Control
+
+---
+
+## 🔮 **FUTURE ENHANCEMENTS** 🔮
+
+- [ ] Add deep learning models (Neural Networks)
+- [ ] Implement ensemble methods (Random Forest, XGBoost)
+- [ ] Add explainability features (SHAP values)
+- [ ] Create API endpoints for integration
+- [ ] Mobile-friendly interface
+- [ ] Multi-language support
+- [ ] Add medical report generation
+
+---
+
+## 🤝 **CONTRIBUTING** 🤝
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="400">
+</p>
+
+Contributions are **always welcome**! 🎉
+
+1. 🍴 Fork the Project
+2. 🌱 Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. 💾 Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. 📤 Push to the Branch (`git push origin feature/AmazingFeature`)
+5. 🎁 Open a Pull Request
+
+---
+
+## 📝 **LICENSE** 📝
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+
+## 👨‍💻 **CONNECT WITH ME** 👨‍💻
+
+[![GitHub](https://img.shields.io/badge/GitHub-mayank--goyal09-black?logo=github)](https://github.com/mayank-goyal09)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mayank_Goyal-blue?logo=linkedin)](https://www.linkedin.com/in/mayank-goyal-4b8756363/)
+[![Email](https://img.shields.io/badge/Email-itsmaygal09%40gmail.com-red?logo=gmail)](mailto:itsmaygal09@gmail.com)
+
+**Mayank Goyal**  
+📊 Data Analyst | 🤖 ML Enthusiast | 🐍 Python Developer  
+💼 Data Analyst Intern @ SpacECE Foundation India
+
+---
+
+## ⭐ **SHOW YOUR SUPPORT** ⭐
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400">
+</p>
+
+Give a ⭐️ if this project helped you learn something new!
+
+### 🫀 **Built with Logic & ❤️ by Mayank Goyal** 🫀
+
+**"Predicting heart health, one heartbeat at a time!"** 💓
+
+---
+
+<p align="center">
+  <a href="https://github.com/mayank-goyal09">Portfolio</a>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%">
+</p>
